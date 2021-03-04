@@ -6,29 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "createInit (admin)",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": []
-				},
-				"url": {
-					"raw": "localhost:3000/v1/createInit",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"v1",
-						"createInit"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Login",
 			"request": {
 				"method": "POST",
@@ -38,7 +15,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "Burguer King",
+							"value": "Admin",
 							"type": "text"
 						},
 						{
@@ -74,7 +51,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1MDE0LCJleHAiOjE2MTQ4NjU0MTR9.fEHLgD6aqWwXWLO2gYK5h7vJCs6irSZ5HR73rLZ9HpY\"",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQxMmM0Mjk3YmIwODFhZDRiNmUwNGMiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODg0MDExLCJleHAiOjE2MTQ4ODQ0MTF9.li61Rg_Q86s4Mw-rf_brSZl1P5S8FYRxeXjpRWVz61g\"",
 						"type": "text"
 					}
 				],
@@ -83,33 +60,39 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "TacoBell",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "username",
-							"value": "Taco Bell",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "12345",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "email",
-							"value": "tacobell@gmail.com",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "phone",
-							"value": "47501140",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "role",
-							"value": "ROL_EMPRESA",
+							"value": "",
 							"type": "text"
+						},
+						{
+							"key": "cantidadEmpleados",
+							"value": "",
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
@@ -134,7 +117,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1MDE0LCJleHAiOjE2MTQ4NjU0MTR9.fEHLgD6aqWwXWLO2gYK5h7vJCs6irSZ5HR73rLZ9HpY\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -160,12 +143,12 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTI5ZDU5OThhOTM0ZDQ4OGU3NDciLCJuYW1lIjoiTGFwaWNlcm9zIFNBIiwiZW1haWwiOiJsYXBpY2Vyb3NiaWNAZ21haWwuY29tIiwicm9sZSI6IlJPTF9FTVBSRVNBIiwicGhvbmUiOjQ0NTAyNDExLCJpYXQiOjE2MTQ4NjUzNTUsImV4cCI6MTYxNDg2NTc1NX0.CQUdnLV8nZxvMIuu_MnAt3MnPBTgZMgOM9uAttvOIDM\"",
+						"value": "",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "localhost:3000/v1/getEmpresa/6040e29d5998a934d488e747",
+					"raw": "localhost:3000/v1/getEmpresa/",
 					"host": [
 						"localhost"
 					],
@@ -173,7 +156,7 @@
 					"path": [
 						"v1",
 						"getEmpresa",
-						"6040e29d5998a934d488e747"
+						""
 					]
 				}
 			},
@@ -186,7 +169,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1NDgzLCJleHAiOjE2MTQ4NjU4ODN9.DimKvVh_ORZK8KRpNJZ2eTrIYw6ZJ6l9cZWb8_5Aqu8\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -195,29 +178,23 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "Burguer King",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "email",
-							"value": "burguerkingbk@gmail.com",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "phone",
-							"value": "1577",
+							"value": "",
 							"type": "text"
-						},
-						{
-							"key": "username",
-							"value": "juegossa",
-							"type": "text",
-							"disabled": true
 						}
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/v1/updateEmpresa/6040e29d5998a934d488e747",
+					"raw": "localhost:3000/v1/updateEmpresa/",
 					"host": [
 						"localhost"
 					],
@@ -225,7 +202,7 @@
 					"path": [
 						"v1",
 						"updateEmpresa",
-						"6040e29d5998a934d488e747"
+						""
 					]
 				}
 			},
@@ -238,7 +215,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1NTM1LCJleHAiOjE2MTQ4NjU5MzV9.AdB3TAnKwau1weRtnjr4IkAyp93um7CRikcgZy-t7-M\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -253,7 +230,7 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/v1/removeEmpresa/6040e2875998a934d488e745",
+					"raw": "localhost:3000/v1/removeEmpresa/",
 					"host": [
 						"localhost"
 					],
@@ -261,7 +238,7 @@
 					"path": [
 						"v1",
 						"removeEmpresa",
-						"6040e2875998a934d488e745"
+						""
 					]
 				}
 			},
@@ -274,7 +251,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -283,33 +260,39 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "Javier",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "lastname",
-							"value": "Dominguez",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "puesto",
-							"value": "Ingeniero",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "departamento",
-							"value": "Sistemas",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "phone",
-							"value": "48559900",
+							"value": "",
 							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/v1/setEmpleado/6040e2c65998a934d488e748",
+					"raw": "localhost:3000/v1/setEmpleado/",
 					"host": [
 						"localhost"
 					],
@@ -317,7 +300,7 @@
 					"path": [
 						"v1",
 						"setEmpleado",
-						"6040e2c65998a934d488e748"
+						""
 					]
 				}
 			},
@@ -330,7 +313,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -339,45 +322,52 @@
 					"urlencoded": [
 						{
 							"key": "name",
-							"value": "Juan",
-							"type": "text",
-							"disabled": true
+							"value": "",
+							"type": "text"
 						},
 						{
 							"key": "lastname",
-							"value": "Flores",
-							"type": "text",
-							"disabled": true
+							"value": "",
+							"type": "text"
 						},
 						{
 							"key": "phone",
-							"value": "11247845",
-							"type": "text",
-							"disabled": true
+							"value": "",
+							"type": "text"
 						},
 						{
 							"key": "puesto",
-							"value": "Ingeniero Informatico",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "departamento",
-							"value": "IT",
+							"value": "",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "localhost:3000/v1/6040e2c65998a934d488e748/updateEmpleado/6040e7ad5998a934d488e74e",
+					"raw": "localhost:3000/v1/:IdU/updateEmpleado/:idE",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"v1",
-						"6040e2c65998a934d488e748",
+						":IdU",
 						"updateEmpleado",
-						"6040e7ad5998a934d488e74e"
+						":idE"
+					],
+					"variable": [
+						{
+							"key": "IdU",
+							"value": ""
+						},
+						{
+							"key": "idE",
+							"value": ""
+						}
 					]
 				}
 			},
@@ -390,7 +380,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -399,16 +389,26 @@
 					"urlencoded": []
 				},
 				"url": {
-					"raw": "localhost:3000/v1/6040e2c65998a934d488e748/removeEmpleado/6040e6795998a934d488e74d",
+					"raw": "localhost:3000/v1/:idU/removeEmpleado/:idE",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"v1",
-						"6040e2c65998a934d488e748",
+						":idU",
 						"removeEmpleado",
-						"6040e6795998a934d488e74d"
+						":idE"
+					],
+					"variable": [
+						{
+							"key": "idU",
+							"value": ""
+						},
+						{
+							"key": "idE",
+							"value": ""
+						}
 					]
 				}
 			},
@@ -421,7 +421,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQxMmNiMzk3YmIwODFhZDRiNmUwNGQiLCJuYW1lIjoiTGFwaWNlcm9zIFNBIiwiZW1haWwiOiJMYXBpY2Vyb3NTQUBnbWFpbC5jb20iLCJyb2xlIjoiUk9MX0VNUFJFU0EiLCJwaG9uZSI6NDc1MDExNDAsImNhbnRpZGFkRW1wbGVhZG9zIjoyLCJpYXQiOjE2MTQ4ODQ1NzIsImV4cCI6MTYxNDg4NDk3Mn0.YxRUoa3T0YxELBbROTnlEx8zrjtynWYvcDpDyEydjLg\"",
 						"type": "text"
 					}
 				],
@@ -430,26 +430,8 @@
 					"urlencoded": [
 						{
 							"key": "search",
-							"value": "Javier",
+							"value": "",
 							"type": "text"
-						},
-						{
-							"key": "lastname",
-							"value": "Gutierrez",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "puesto",
-							"value": "Limpiador",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "departamento",
-							"value": "Limpiador",
-							"type": "text",
-							"disabled": true
 						}
 					]
 				},
@@ -475,7 +457,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTI5ZDU5OThhOTM0ZDQ4OGU3NDciLCJuYW1lIjoiQnVyZ3VlciBLaW5nIiwiZW1haWwiOiJidXJndWVya2luZ2JrQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjoxNTc3LCJpYXQiOjE2MTQ4NjY3MjMsImV4cCI6MTYxNDg2NzEyM30.kjpgGLj3VNdB2TuyqfJjEv9JmKM8EhUGfQa2D-2ewVA\"",
+						"value": "",
 						"type": "text"
 					}
 				],
@@ -484,7 +466,7 @@
 					"urlencoded": []
 				},
 				"url": {
-					"raw": "localhost:3000/v1/pdfEmpleados/6040e29d5998a934d488e747",
+					"raw": "localhost:3000/v1/pdfEmpleados/",
 					"host": [
 						"localhost"
 					],
@@ -492,7 +474,7 @@
 					"path": [
 						"v1",
 						"pdfEmpleados",
-						"6040e29d5998a934d488e747"
+						""
 					]
 				}
 			},
