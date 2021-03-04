@@ -1,0 +1,502 @@
+{
+	"info": {
+		"_postman_id": "fcffacd8-6203-4565-b443-0e214bca9816",
+		"name": "ProyectoEmpresas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createInit (admin)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/v1/createInit",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"createInit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Burguer King",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "getToken",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearEmpresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1MDE0LCJleHAiOjE2MTQ4NjU0MTR9.fEHLgD6aqWwXWLO2gYK5h7vJCs6irSZ5HR73rLZ9HpY\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "TacoBell",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "Taco Bell",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tacobell@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "47501140",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "ROL_EMPRESA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/saveEmpresa",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"saveEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmpresas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1MDE0LCJleHAiOjE2MTQ4NjU0MTR9.fEHLgD6aqWwXWLO2gYK5h7vJCs6irSZ5HR73rLZ9HpY\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/v1/getEmpresas/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"getEmpresas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTI5ZDU5OThhOTM0ZDQ4OGU3NDciLCJuYW1lIjoiTGFwaWNlcm9zIFNBIiwiZW1haWwiOiJsYXBpY2Vyb3NiaWNAZ21haWwuY29tIiwicm9sZSI6IlJPTF9FTVBSRVNBIiwicGhvbmUiOjQ0NTAyNDExLCJpYXQiOjE2MTQ4NjUzNTUsImV4cCI6MTYxNDg2NTc1NX0.CQUdnLV8nZxvMIuu_MnAt3MnPBTgZMgOM9uAttvOIDM\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/v1/getEmpresa/6040e29d5998a934d488e747",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"getEmpresa",
+						"6040e29d5998a934d488e747"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmpresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1NDgzLCJleHAiOjE2MTQ4NjU4ODN9.DimKvVh_ORZK8KRpNJZ2eTrIYw6ZJ6l9cZWb8_5Aqu8\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Burguer King",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "burguerkingbk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1577",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "juegossa",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/updateEmpresa/6040e29d5998a934d488e747",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"updateEmpresa",
+						"6040e29d5998a934d488e747"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeEmpresa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTIyYmQxNmMyNzMxYTgxZDE1MzEiLCJyb2xlIjoiUk9MX0FETUlOIiwiaWF0IjoxNjE0ODY1NTM1LCJleHAiOjE2MTQ4NjU5MzV9.AdB3TAnKwau1weRtnjr4IkAyp93um7CRikcgZy-t7-M\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/removeEmpresa/6040e2875998a934d488e745",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"removeEmpresa",
+						"6040e2875998a934d488e745"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Empleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Javier",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Dominguez",
+							"type": "text"
+						},
+						{
+							"key": "puesto",
+							"value": "Ingeniero",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "Sistemas",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "48559900",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/setEmpleado/6040e2c65998a934d488e748",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"setEmpleado",
+						"6040e2c65998a934d488e748"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmpleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Juan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "Flores",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "11247845",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "puesto",
+							"value": "Ingeniero Informatico",
+							"type": "text"
+						},
+						{
+							"key": "departamento",
+							"value": "IT",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/6040e2c65998a934d488e748/updateEmpleado/6040e7ad5998a934d488e74e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"6040e2c65998a934d488e748",
+						"updateEmpleado",
+						"6040e7ad5998a934d488e74e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarEmpleado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/v1/6040e2c65998a934d488e748/removeEmpleado/6040e6795998a934d488e74d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"6040e2c65998a934d488e748",
+						"removeEmpleado",
+						"6040e6795998a934d488e74d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarEmpleados",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTJjNjU5OThhOTM0ZDQ4OGU3NDgiLCJuYW1lIjoiVGFjb0JlbGwiLCJlbWFpbCI6InRhY29iZWxsQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjo0NzUwMTE0MCwiaWF0IjoxNjE0ODY2MzQwLCJleHAiOjE2MTQ4NjY3NDB9.36I2AXdAGzOGrzzyegdhhkITV_--NhU4gpcsEruON5I\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search",
+							"value": "Javier",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Gutierrez",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "puesto",
+							"value": "Limpiador",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "departamento",
+							"value": "Limpiador",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/v1/search/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"search",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearPDF",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDQwZTI5ZDU5OThhOTM0ZDQ4OGU3NDciLCJuYW1lIjoiQnVyZ3VlciBLaW5nIiwiZW1haWwiOiJidXJndWVya2luZ2JrQGdtYWlsLmNvbSIsInJvbGUiOiJST0xfRU1QUkVTQSIsInBob25lIjoxNTc3LCJpYXQiOjE2MTQ4NjY3MjMsImV4cCI6MTYxNDg2NzEyM30.kjpgGLj3VNdB2TuyqfJjEv9JmKM8EhUGfQa2D-2ewVA\"",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/v1/pdfEmpleados/6040e29d5998a934d488e747",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"pdfEmpleados",
+						"6040e29d5998a934d488e747"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
