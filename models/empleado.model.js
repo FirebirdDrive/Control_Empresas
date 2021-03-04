@@ -8,7 +8,7 @@ var empleadoSchema = Schema({
     lastname: String,
     puesto: String,
     departamento: String,
-    phone: Number
+    phone: Number,
 })
 
 module.exports = mongoose.model('empleado', empleadoSchema);

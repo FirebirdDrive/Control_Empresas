@@ -11,6 +11,7 @@ exports.createToken = (user)=>{
         email: user.email,
         role: user.role,
         phone: user.phone,
+        cantidadEmpleados: user.cantidadEmpleados,
         iat: moment().unix(),
         exp: moment().add(400, 'seconds').unix()
     }

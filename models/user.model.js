@@ -10,6 +10,7 @@ var userSchema = Schema({
     email: String,
     phone: Number,
     role: String,
+    cantidadEmpleados: Number,
     empleados: [{type: Schema.ObjectId, ref: 'empleado'}]
 })
 

@@ -30,7 +30,13 @@ function setEmpleado(req, res){
                             if(err){
                                 return res.status(500).send({message: 'Error general al agregar empleado'})
                             }else if(empleadoPush){
-                                return res.send({message: 'Empleado agregado', empleadoPush});
+                                User.findByIdAndUpdate(userId, {$inc: {cantidadEmpleados: +1}}, {new: true}, (err, empleadoPlus)=>{
+                                    if(err){
+                                        return res.status(500).send({message: "Error al contar el empleado"})
+                                    }else if(empleadoPlus){
+                                        return res.send({message: "Empleado agregado", empleadoPlus})
+                                    }
+                                })
                             }else{
                                 return res.status(500).send({message: 'Error al agregar empleado'})
                             }
@@ -102,7 +108,13 @@ function removeEmpleado(req, res){
                         if(err){
                             return res.status(500).send({message: 'Error general al eliminar el empleado'});
                         }else if(empleadoRemoved){
-                            return res.send({message: 'Empleado eliminado', empleadoPull});
+                            User.findByIdAndUpdate(userId, {$inc: {cantidadEmpleados: -1}}, {new: true}, (err, empleadoPlus)=>{
+                                if(err){
+                                    return res.status(500).send({message: "Error al eliminar el empleado"})
+                                }else if(empleadoPlus){
+                                    return res.send({message: "Empleado eliminado", empleadoPlus})
+                                }
+                            })
                         }else{
                             return res.status(500).send({message: 'Empleado no encontrado, o ya eliminado'});
                         }
